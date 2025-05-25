@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미친 예측기</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #111; color: white; padding: 20px; }
+        button { margin: 10px; padding: 20px; font-size: 20px; border-radius: 50%; border: none; }
+        .b { background-color: red; color: white; }
+        .p { background-color: blue; color: white; }
+        .t { background-color: green; color: white; }
+        #history { max-height: 200px; overflow-y: auto; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🔥 미친 예측기 🔥</h1>
+    <div>
+        <button class="b" onclick="addResult('B')">뱅커 🔴</button>
+        <button class="p" onclick="addResult('P')">플레이어 🔵</button>
+        <button class="t" onclick="addResult('T')">타이 🟢</button>
+    </div>
+    <div id="predictionArea">예측 없음</div>
+    <button onclick="resetAll()">초기화</button>
+    <div id="history"></div>
+    <script src="app.js"></script>
+</body>
+</html>
